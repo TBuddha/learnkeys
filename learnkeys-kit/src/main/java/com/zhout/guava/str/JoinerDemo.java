@@ -1,4 +1,4 @@
-package com.zhout.guava;
+package com.zhout.guava.str;
 
 import com.google.common.base.Joiner;
 
