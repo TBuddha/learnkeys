@@ -30,7 +30,6 @@ public class FileReaderTest {
   @Before
   public void setUp() {
     try {
-      // _input = new FileReader("data.txt");
       _input = new FileReader(Resources.getResource("data.txt").getFile());
       _empty = newEmptyFile();
     } catch (IOException e) {
@@ -121,5 +120,16 @@ public class FileReaderTest {
     Assert.assertEquals("read last char", '6', _input.read());
     Assert.assertEquals("read at end", -1, _input.read());
     Assert.assertEquals("read past end", -1, _input.read());
+  }
+
+  @Test
+  public void testReadAfterClose() throws IOException {
+    _input.close();
+    try {
+      // Assert.fail("no exception for read past end");
+      _input.read();
+      Assert.fail("no exception for read past end");
+    } catch (IOException e) {
+    }
   }
 }
