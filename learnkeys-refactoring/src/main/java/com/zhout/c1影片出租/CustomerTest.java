@@ -1,8 +1,8 @@
-package com.zhout;
+package com.zhout.c1影片出租;
 
-import com.zhout.影片出租.after.Customer;
-import com.zhout.影片出租.after.Movie;
-import com.zhout.影片出租.after.Rental;
+import com.zhout.c1影片出租.after.Customer;
+import com.zhout.c1影片出租.after.Movie;
+import com.zhout.c1影片出租.after.Rental;
 import org.junit.Test;
 
 /**

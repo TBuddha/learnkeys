@@ -1,4 +1,4 @@
-package com.zhout.测试体系;
+package com.zhout.c4测试体系;
 
 import com.google.common.io.Resources;
 import org.junit.After;

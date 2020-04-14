@@ -1,4 +1,4 @@
-package com.zhout.重新组织函数.引入解释性变量;
+package com.zhout.c6重新组织函数.p5引入解释性变量;
 
 /**
  * @author zhout
@@ -16,7 +16,7 @@ public class Demo {
 
   private Integer resize = 1;
 
-  public void foo1() {
+  public void foo() {
     if ((platform.toUpperCase().indexOf("MAC") > -1)
         && (browser.toUpperCase().indexOf("IE") > -1)
         && wasInitialized()
@@ -25,6 +25,7 @@ public class Demo {
     }
   }
 
+  // 将该表达式（或其中一部分）的结果放进一个临时变量，以此变量名称来解释表达式用途
   public void foo2() {
     final boolean isMacOs = platform.toUpperCase().indexOf("MAC") > -1;
     final boolean isIEBrowser = browser.toUpperCase().indexOf("IE") > -1;
