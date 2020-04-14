@@ -14,7 +14,7 @@ public class Demo {
     System.out.println("amount" + amount);
   }
 
-  //final
+  //将这段代码放进一个独立函数中，并让函数名称解释该函数的用途
   void printOwing2(double amount) {
     printBanner();
     printDetails(amount);

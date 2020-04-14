@@ -80,6 +80,7 @@ public class Demo2 {
   }
 
   double getOutstanding() {
+    // 1
     //    Enumeration e = _orders.elements();
     //    double outstanding = 0.0;
     //    while (e.hasMoreElements()) {
@@ -88,7 +89,7 @@ public class Demo2 {
     //    }
     //    return outstanding;
 
-    // 修改命名规则
+    // 2 修改命名规则
     Enumeration e = _orders.elements();
     double result = 0.0;
     while (e.hasMoreElements()) {
@@ -100,7 +101,7 @@ public class Demo2 {
   /** ************************************************************ */
 
   // 如有传参
-  void printOwing5(double previousAmount) {
+  void printOwing_ext(double previousAmount) {
     Enumeration e = _orders.elements();
     double outstanding = previousAmount * 1.2;
     printBanner();
@@ -112,7 +113,7 @@ public class Demo2 {
     printDetails(outstanding);
   }
 
-  void printOwing6(double previousAmount) {
+  void printOwing_ext1(double previousAmount) {
     double outstanding = previousAmount * 1.2;
     printBanner();
     outstanding = getOutstanding(outstanding);
@@ -130,7 +131,7 @@ public class Demo2 {
   }
 
   //final
-  void printOwing7(double previousAmount) {
+  void printOwing_ext2(double previousAmount) {
     printBanner();
     double outstanding = getOutstanding(previousAmount * 1.2);
     printDetails(outstanding);
