@@ -29,6 +29,7 @@
         <module>learnkeys-onjava8</module>
         <module>learnkeys-refactoring</module>
         <module>learnkeys-test</module>
+        <module>learnkeys-question</module>
     </modules>
 
     <dependencyManagement>
