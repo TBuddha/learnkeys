@@ -19,4 +19,9 @@ public class Customer {
     // 仅应在修改关联时由Order使用
     return _orders;
   }
+
+  // 希望在Customer 中也能修改连接（link），就让它调用控制函数
+  void addOrder(Order arg) {
+    arg.setCustomer(this);
+  }
 }
