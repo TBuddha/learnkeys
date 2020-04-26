@@ -4,7 +4,7 @@ package com.zhout.c7在对象之间搬移特性.p3提炼类.before;
  * @author zhout
  * @date 2020/4/15 14:02
  */
-public class Person {
+class Person {
 
   private String _name;
   private String _officeAreaCode;
