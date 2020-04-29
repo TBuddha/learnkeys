@@ -4,7 +4,7 @@ package com.zhout.c8重新组织数据.p14以state和strategy取代型别码.bef
  * @author zhout
  * @date 2020/4/24 18:01
  */
-public class Employee {
+class Employee {
   private int _type;
   static final int ENGINEER = 0;
   static final int SALESMAN = 1;

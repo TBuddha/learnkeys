@@ -13,7 +13,7 @@ public class Client {
 
     // thePerson.getBloodGroupCode();
     // ==>
-    thePerson.getBloodGroup().getCode();
+    //thePerson.getBloodGroup().getCode();
 
     // thePerson.setBloodGroup(Person.AB);
     // ==>

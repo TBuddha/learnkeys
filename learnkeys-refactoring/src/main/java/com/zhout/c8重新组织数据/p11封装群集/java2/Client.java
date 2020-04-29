@@ -10,37 +10,33 @@ import java.util.Set;
  * @author zhout
  * @date 2020/4/22 16:21
  */
-public class Client {
+class Client {
 
-  /**
-   * 添加课程
-   */
-  public void addCourse(){
+  /** 添加课程 */
+  public void addCourse() {
     Person kent = new Person();
     Set s = new HashSet();
-    s.add(new Course ("Smalltalk Programming", false));
-    s.add(new Course ("Appreciating Single Malts", true));
-    kent.setCourses(s);
-    Assert.assertEquals (2, kent.getCourses().size());
+    s.add(new Course("Smalltalk Programming", false));
+    s.add(new Course("Appreciating Single Malts", true));
+    //    kent.setCourses(s);
+    //    Assert.assertEquals (2, kent.getCourses().size());
 
-    Course refactor = new Course ("Refactoring", true);
+    Course refactor = new Course("Refactoring", true);
     kent.getCourses().add(refactor);
-    kent.getCourses().add(new Course ("Brutal Sarcasm", false));
-    Assert.assertEquals (4, kent.getCourses().size());
+    kent.getCourses().add(new Course("Brutal Sarcasm", false));
+    Assert.assertEquals(4, kent.getCourses().size());
 
     kent.getCourses().remove(refactor);
-    Assert.assertEquals (3, kent.getCourses().size());
+    Assert.assertEquals(3, kent.getCourses().size());
   }
 
-  /**
-   * 高级课程
-   */
-  public void AdvancedCourse(Person person){
+  /** 高级课程 */
+  public void AdvancedCourse(Person person) {
     Iterator iter = person.getCourses().iterator();
     int count = 0;
     while (iter.hasNext()) {
       Course each = (Course) iter.next();
-      if (each.isAdvanced()) count ++;
+      if (each.isAdvanced()) count++;
     }
   }
 }

@@ -6,7 +6,7 @@ package com.zhout.c9简化条件表达式.p3合并重复的条件片段;
  * @author zhout
  * @date 2020/4/26 18:08
  */
-public class Demo {
+class Demo {
 
   //  if (isSpecialDeal()) {
   //    total = price * 0.95;

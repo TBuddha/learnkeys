@@ -6,7 +6,7 @@ package com.zhout.c8重新组织数据.p12以类取代型别码;
  * @author zhout
  * @date 2020/4/24 14:40
  */
-public class BloodGroup {
+class BloodGroup {
 
   public static final BloodGroup O = new BloodGroup(0);
   public static final BloodGroup A = new BloodGroup(1);
