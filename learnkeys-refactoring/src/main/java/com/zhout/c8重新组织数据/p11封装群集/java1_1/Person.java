@@ -1,6 +1,7 @@
 package com.zhout.c8重新组织数据.p11封装群集.java1_1;
 
-import org.junit.Assert;
+
+import com.zhout.Assert;
 
 import java.util.Enumeration;
 import java.util.Vector;
@@ -26,7 +27,7 @@ class Person {
   // ==>
   // 可以修改setCourses()来初始化这个vector
   public void initializeCourses(Vector arg) {
-    Assert.assertTrue(_courses.isEmpty());
+    Assert.isTrue(_courses.isEmpty());
     Enumeration e = arg.elements();
     while (e.hasMoreElements()) {
       addCourse((Course) e.nextElement());

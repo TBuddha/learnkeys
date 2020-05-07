@@ -14,7 +14,7 @@ class Employee {
 
   static final int MANAGER = 2;
 
-  // 由于这是一个factory method，我不能实施Replace Conditional with Polymorphism，因为使用该函数时我根本尚未创建出对象。
+  // 由于这是一个factory method，我不能实施用多态替换条件，因为使用该函数时我根本尚未创建出对象。
   static Employee create(int type) {
     switch (type) {
       case ENGINEER:

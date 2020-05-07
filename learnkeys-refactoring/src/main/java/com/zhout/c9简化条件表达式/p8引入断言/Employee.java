@@ -1,6 +1,7 @@
 package com.zhout.c9简化条件表达式.p8引入断言;
 
-import org.junit.Assert;
+
+import com.zhout.Assert;
 
 /**
  * 下面是一个简单例子：开支（经费）限制。后勤部门的员工每个月有固定的开支限额；业务部门的员工则按照项目的开支限额来控制自己的开支。
@@ -25,7 +26,7 @@ class Employee {
 
   // 这段代码包含了一个明显假设：任何员工要不就参与某个项目，要不就有个人开支限额。我们可以使用assertion 在代码中更明确地指出这一点：
   double getExpenseLimit1() {
-    Assert.assertTrue(_expenseLimit != NULL_EXPENSE || _primaryProject != null);
+    Assert.isTrue(_expenseLimit != NULL_EXPENSE || _primaryProject != null);
     return (_expenseLimit != NULL_EXPENSE)
         ? _expenseLimit
         : _primaryProject.getMemberExpenseLimit();

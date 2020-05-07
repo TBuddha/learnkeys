@@ -1,5 +1,7 @@
 package com.zhout.c10简化函数调用.p15以测试取代异常;
 
+import com.zhout.Assert;
+
 import java.util.EmptyStackException;
 import java.util.Stack;
 
