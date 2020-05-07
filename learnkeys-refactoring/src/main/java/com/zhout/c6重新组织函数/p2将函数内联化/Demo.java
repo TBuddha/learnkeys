@@ -4,7 +4,7 @@ package com.zhout.c6重新组织函数.p2将函数内联化;
  * @author zhout
  * @date 2020/4/14 14:28
  */
-public class Demo {
+class Demo {
 
   private int _numberOfLateDeliveries;
 

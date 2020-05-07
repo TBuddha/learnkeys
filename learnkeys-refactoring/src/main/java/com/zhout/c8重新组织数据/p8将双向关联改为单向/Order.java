@@ -4,7 +4,7 @@ package com.zhout.c8重新组织数据.p8将双向关联改为单向;
  * @author zhout
  * @date 2020/4/22 14:33
  */
-public class Order {
+class Order {
 
   // Order-to-Customer link，也是本例的移除对象
   private Customer _customer;

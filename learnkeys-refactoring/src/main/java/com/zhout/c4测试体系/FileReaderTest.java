@@ -12,7 +12,7 @@ import java.io.*;
  * @author zhout
  * @date 2020/4/9 11:15
  */
-public class FileReaderTest {
+class FileReaderTest {
 
   Reader _input;
   Reader _empty;

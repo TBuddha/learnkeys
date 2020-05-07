@@ -11,7 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @author zhout
  * @date 2020/4/20 15:28
  */
-public class Customer {
+class Customer {
 
   private final String _name;
 

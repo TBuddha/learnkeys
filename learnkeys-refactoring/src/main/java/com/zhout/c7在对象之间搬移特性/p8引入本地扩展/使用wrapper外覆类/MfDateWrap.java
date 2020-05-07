@@ -6,7 +6,7 @@ import java.util.Date;
  * @author zhout
  * @date 2020/4/17 10:50
  */
-public class MfDateWrap {
+class MfDateWrap {
 
   private Date _original;
 

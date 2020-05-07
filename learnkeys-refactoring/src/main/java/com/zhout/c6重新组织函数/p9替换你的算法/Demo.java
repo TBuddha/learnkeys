@@ -7,7 +7,7 @@ import java.util.List;
  * @author zhout
  * @date 2020/4/14 16:39
  */
-public class Demo {
+class Demo {
 
   String foundPerson(String[] people) {
     for (int i = 0; i < people.length; i++) {

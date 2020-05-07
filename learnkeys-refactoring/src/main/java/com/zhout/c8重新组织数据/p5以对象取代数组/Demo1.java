@@ -4,7 +4,7 @@ package com.zhout.c8重新组织数据.p5以对象取代数组;
  * @author zhout
  * @date 2020/4/20 16:51
  */
-public class Demo1 {
+class Demo1 {
 
   public void array() {
     // 我们的范例从一个数组开始，其中有三个元素，分别保存一支球队的名称、获胜场 次和失利场次。这个数组的声明可能像这样

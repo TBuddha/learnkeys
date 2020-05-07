@@ -4,7 +4,7 @@ package com.zhout.c6重新组织函数.p4以查询取代临时变量;
  * @author zhout
  * @date 2020/4/13 16:12
  */
-public class Demo {
+class Demo {
 
   private int _quantity;
 

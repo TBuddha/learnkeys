@@ -6,7 +6,7 @@ import java.util.Date;
  * @author zhout
  * @date 2020/4/16 16:28
  */
-public class Demo {
+class Demo {
 
   public void test(Date previousEnd) {
     Date newStart =

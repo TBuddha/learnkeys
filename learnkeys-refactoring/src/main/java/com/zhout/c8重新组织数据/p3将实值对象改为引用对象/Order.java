@@ -4,7 +4,7 @@ package com.zhout.c8重新组织数据.p3将实值对象改为引用对象;
  * @author zhout
  * @date 2020/4/20 15:37
  */
-public class Order {
+class Order {
 
   private Customer _customer;
 

@@ -4,7 +4,7 @@ package com.zhout.c1影片出租.after;
  * @author zhout
  * @date 2020/3/26 11:22
  */
-public class Rental {
+class Rental {
   private Movie _movie; // 影片
   private int _daysRented; // 租期
 

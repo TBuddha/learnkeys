@@ -6,7 +6,7 @@ import java.util.Observable;
  * @author zhout
  * @date 2020/4/21 10:17
  */
-public class Interval extends Observable {
+class Interval extends Observable {
 
   // 在domain class 中加入 _end 值域：
   private String _end = "0";

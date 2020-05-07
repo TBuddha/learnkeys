@@ -9,7 +9,7 @@ import java.util.Vector;
  * @author zhout
  * @date 2020/3/26 11:23
  */
-public class Customer {
+class Customer {
   @Getter private String _name; // 姓名
   private Vector _rentals = new Vector(); // 租借记录
 

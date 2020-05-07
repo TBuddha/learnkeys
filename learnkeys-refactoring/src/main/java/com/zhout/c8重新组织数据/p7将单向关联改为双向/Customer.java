@@ -7,7 +7,7 @@ import java.util.Set;
  * @author zhout
  * @date 2020/4/21 11:13
  */
-public class Customer {
+class Customer {
 
   // 首先，我要为Customer添加一个值域。由于一个客户可以拥有多份定单，所以这个新增值域应该是个群集（collection）。
   // 我不希望同一份定单在同一个群集中出现一次以上，所以这里适合使用set：

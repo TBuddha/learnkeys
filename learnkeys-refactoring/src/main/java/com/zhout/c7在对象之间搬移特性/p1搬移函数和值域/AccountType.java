@@ -4,7 +4,7 @@ package com.zhout.c7在对象之间搬移特性.p1搬移函数和值域;
  * @author zhout
  * @date 2020/4/15 09:28
  */
-public class AccountType {
+class AccountType {
 
   double overdraftCharge(int daysOverdrawn) {
     if (isPremium()) {

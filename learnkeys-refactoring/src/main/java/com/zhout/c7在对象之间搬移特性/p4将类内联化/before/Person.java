@@ -1,6 +1,5 @@
 package com.zhout.c7在对象之间搬移特性.p4将类内联化.before;
 
-import com.zhout.c7在对象之间搬移特性.p3提炼类.after.TelephoneNumber;
 
 /**
  * @author zhout

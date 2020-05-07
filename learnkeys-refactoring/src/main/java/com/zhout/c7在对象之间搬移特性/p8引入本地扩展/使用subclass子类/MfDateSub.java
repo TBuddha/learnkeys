@@ -7,7 +7,7 @@ import java.util.Date;
  * @date 2020/4/17 10:19
  *     <p>Date的subclass
  */
-public class MfDateSub extends Date {
+class MfDateSub extends Date {
 
   /** 然后，我需要处理Date和我的扩展类之间的不同处。MfDateSub 构造函数需要委托给Date构造函数： */
   public MfDateSub(String dateString) {

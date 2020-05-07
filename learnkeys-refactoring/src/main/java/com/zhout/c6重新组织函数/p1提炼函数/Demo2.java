@@ -8,7 +8,7 @@ import java.util.Enumeration;
  * @author zhout
  * @date 2020/4/14 11:11
  */
-public class Demo2 {
+class Demo2 {
 
   private Order _orders;
 

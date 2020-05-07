@@ -6,7 +6,7 @@ import java.awt.*;
  * @author zhout
  * @date 2020/4/21 10:06
  */
-public class IntervalWindow extends Frame {
+class IntervalWindow extends Frame {
   java.awt.TextField _startField;
   java.awt.TextField _endField;
   java.awt.TextField _lengthField;

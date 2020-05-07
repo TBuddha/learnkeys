@@ -4,7 +4,7 @@ package com.zhout.c1影片出租.after;
  * @author zhout
  * @date 2020/3/26 11:21
  */
-public class Movie {
+class Movie {
   public static final int CHILDRENS = 2;
   public static final int REGULAR = 0;
   public static final int NEW_RELEASE = 1;

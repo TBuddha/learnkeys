@@ -1,6 +1,5 @@
 package com.zhout.c8重新组织数据.p11封装群集.java1_1;
 
-import com.zhout.c8重新组织数据.p11封装群集.java2.Course;
 import org.junit.Assert;
 
 import java.util.Enumeration;

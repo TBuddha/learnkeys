@@ -4,7 +4,7 @@ package com.zhout.c6重新组织函数.p5引入解释性变量;
  * @author zhout
  * @date 2020/4/13 16:42
  */
-public class Demo2 {
+class Demo2 {
   private int _quantity;
 
   private int _itemPrice;

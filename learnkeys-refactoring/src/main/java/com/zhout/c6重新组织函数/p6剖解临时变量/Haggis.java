@@ -7,7 +7,7 @@ package com.zhout.c6重新组织函数.p6剖解临时变量;
  * @author zhout
  * @date 2020/4/14 10:27
  */
-public class Haggis {
+class Haggis {
 
   private double _primaryForce = 8.0; // 初始力
 

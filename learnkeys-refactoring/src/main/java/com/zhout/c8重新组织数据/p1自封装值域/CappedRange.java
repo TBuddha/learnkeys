@@ -6,7 +6,7 @@ package com.zhout.c8重新组织数据.p1自封装值域;
  * @author zhout
  * @date 2020/4/20 10:29
  */
-public class CappedRange extends IntRange {
+class CappedRange extends IntRange {
 
   CappedRange(int low, int high, int cap) {
     super(low, high);

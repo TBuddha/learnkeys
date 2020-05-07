@@ -6,7 +6,7 @@ import java.util.Date;
  * @author zhout
  * @date 2020/4/14 15:12
  */
-public class Param2 {
+class Param2 {
 
   public static void main(String[] args) {
     Date d1 = new Date("1 Apr 98");

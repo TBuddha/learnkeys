@@ -4,7 +4,7 @@ package com.zhout.c6重新组织函数.p6剖解临时变量;
  * @author zhout
  * @date 2020/4/13 16:47
  */
-public class Demo {
+class Demo {
 
   double _height = 1;
   double _width = 2;

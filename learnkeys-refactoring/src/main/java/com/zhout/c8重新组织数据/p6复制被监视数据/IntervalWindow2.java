@@ -8,7 +8,7 @@ import java.util.Observer;
  * @author zhout
  * @date 2020/4/21 10:18
  */
-public class IntervalWindow2 extends Frame implements Observer {
+class IntervalWindow2 extends Frame implements Observer {
 
   java.awt.TextField _startField;
   java.awt.TextField _endField;

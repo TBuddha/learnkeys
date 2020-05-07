@@ -4,7 +4,7 @@ package com.zhout.c6重新组织函数.p1提炼函数;
  * @author zhout
  * @date 2020/4/14 11:09
  */
-public class Demo {
+class Demo {
   private String _name;
 
   void printOwing1(double amount) {

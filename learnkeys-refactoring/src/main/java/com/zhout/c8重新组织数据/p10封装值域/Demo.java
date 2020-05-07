@@ -7,7 +7,7 @@ import lombok.Setter;
  * @author zhout
  * @date 2020/4/22 16:07
  */
-public class Demo {
+class Demo {
 
   // public String name;
 

@@ -10,7 +10,7 @@ import java.util.Set;
  * @author zhout
  * @date 2020/4/22 14:33
  */
-public class Customer {
+class Customer {
 
   // Customer-to-Order link
   private Set _orders = new HashSet();

@@ -4,7 +4,7 @@ package com.zhout.c6重新组织函数.p7移除对参数的赋值动作;
  * @author zhout
  * @date 2020/4/14 14:52
  */
-public class Demo2 {
+class Demo2 {
 
   int discount(int inputVal, int quantity, int yearToDate) {
     if (inputVal > 50) inputVal -= 2;

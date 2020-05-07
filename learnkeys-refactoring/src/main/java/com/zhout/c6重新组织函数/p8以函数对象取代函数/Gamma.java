@@ -4,7 +4,7 @@ package com.zhout.c6重新组织函数.p8以函数对象取代函数;
  * @author zhout
  * @date 2020/4/14 15:20
  */
-public class Gamma {
+class Gamma {
 
   private final Account _account;
   private int inputVal;

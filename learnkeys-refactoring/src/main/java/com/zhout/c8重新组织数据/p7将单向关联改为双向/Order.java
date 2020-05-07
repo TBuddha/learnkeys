@@ -4,7 +4,7 @@ package com.zhout.c8重新组织数据.p7将单向关联改为双向;
  * @author zhout
  * @date 2020/4/21 11:13
  */
-public class Order {
+class Order {
 
   Customer _customer;
 

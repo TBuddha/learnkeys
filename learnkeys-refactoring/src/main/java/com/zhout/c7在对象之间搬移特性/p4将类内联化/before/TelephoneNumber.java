@@ -4,7 +4,7 @@ package com.zhout.c7在对象之间搬移特性.p4将类内联化.before;
  * @author zhout
  * @date 2020/4/15 14:09
  */
-public class TelephoneNumber {
+class TelephoneNumber {
 
   private String _number;
   private String _areaCode;

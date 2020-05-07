@@ -4,7 +4,7 @@ package com.zhout.c8重新组织数据.p1自封装值域;
  * @author zhout
  * @date 2020/4/20 10:23
  */
-public class IntRange {
+class IntRange {
   private int _low, _high;
 
   // 1

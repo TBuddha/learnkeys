@@ -4,7 +4,7 @@ package com.zhout.c7在对象之间搬移特性.p1搬移函数和值域;
  * @author zhout
  * @date 2020/4/15 09:27
  */
-public class Account {
+class Account {
 
   private AccountType _type;
   private int _daysOverdrawn;

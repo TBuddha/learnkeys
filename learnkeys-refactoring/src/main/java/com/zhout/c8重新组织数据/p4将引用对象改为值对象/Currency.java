@@ -4,7 +4,7 @@ package com.zhout.c8重新组织数据.p4将引用对象改为值对象;
  * @author zhout
  * @date 2020/4/20 16:34
  */
-public class Currency {
+class Currency {
 
   private String _code;
 

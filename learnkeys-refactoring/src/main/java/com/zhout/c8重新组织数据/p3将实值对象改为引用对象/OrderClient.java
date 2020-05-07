@@ -7,7 +7,7 @@ import java.util.Iterator;
  * @author zhout
  * @date 2020/4/20 15:37
  */
-public class OrderClient {
+class OrderClient {
 
   private static int numberOfOrdersFor(Collection orders, String customer) {
     int result = 0;

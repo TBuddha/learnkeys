@@ -4,7 +4,7 @@ package com.zhout.c6重新组织函数.p5引入解释性变量;
  * @author zhout
  * @date 2020/4/13 16:25
  */
-public class Demo {
+class Demo {
 
   private String platform = "MAC";
 
