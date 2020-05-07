@@ -5,7 +5,7 @@ package com.zhout.停止线程.p4在沉睡中停止;
  * @date 2020/4/22 10:43
  *  先interrupt()然后再用sleep停止
  */
-public class MyThread2 extends Thread {
+class MyThread2 extends Thread {
   public void run() {
     super.run();
     try {

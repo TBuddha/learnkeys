@@ -15,7 +15,9 @@ class Demo {
     if (name.equals("width")) _width = value;
     // Assert.shouldNeverReachHere();
   }
+
   // => 针对该参数的每一个可能值，建立一个独立函数。
+
   void setHeight(int arg) {
     _height = arg;
   }

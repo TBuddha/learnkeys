@@ -5,7 +5,7 @@ package com.zhout.停止线程.p3能停止的线程_异常法;
  * @date 2020/4/22 10:16
  *     <p>MyThread1的示例虽然停止了线程，但如果for语句下面还有语句，还是会继续运行的。看下面的例子：
  */
-public class MyThread2 extends Thread {
+class MyThread2 extends Thread {
   public void run() {
     super.run();
     // !!!这里我调整了原始例子中的50万变成500万，否则无法成功，猜测与计算机性能有关

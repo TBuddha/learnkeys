@@ -1,6 +1,8 @@
 package com.zhout.c10简化函数调用.p6以明确函数取代参数;
 
 /**
+ * 下列代码中，我想根据不同的参数值，建立Employee 之下不同的subclass。以下代码往往是Replace Constructor with Factory Method 的施行成果：
+ *
  * @author zhout
  * @date 2020/4/30 14:18
  */
@@ -44,17 +46,11 @@ class Employee {
   }
   // --------------------------------------//
 
+  // 4、接下来，我把注意力转移到旧函数的调用端。我把诸如下面这样的代码：
   public static void main(String[] args) {
-    // 接下来，我把注意力转移到旧函数的调用端。我把诸如下面这样的代码：
     // Employee kent = Employee.create(ENGINEER);
     // =>替换为：
     Employee kent = Employee.createEngineer();
-    // 修改完create() 函数的所有调用者之后，我就可以把create() 函数删掉了。同时也可以把所有常量都删掉。
+    /** 修改完create() 函数的所有调用者之后，我就可以把create() 函数删掉了。同时也可以把所有常量都删掉。 见Employee2 */
   }
 }
-
-class Engineer extends Employee {}
-
-class Salesman extends Employee {}
-
-class Manager extends Employee {}

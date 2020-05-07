@@ -12,7 +12,7 @@ import java.util.*;
  * @author zhout
  * @date 2020/4/7 15:12
  */
-public class ListDemo {
+class ListDemo {
   public static void main(String[] args) {
     List<String> list = Lists.newArrayList();
     List<String> list2 = Lists.newArrayList("a", "b", "c");

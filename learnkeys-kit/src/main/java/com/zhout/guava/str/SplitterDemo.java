@@ -6,7 +6,7 @@ import com.google.common.base.Splitter;
  * @author zhout
  * @date 2020/4/7 15:05
  */
-public class SplitterDemo {
+class SplitterDemo {
   public static void main(String[] args) {
     /*
      on():指定分隔符来分割字符串

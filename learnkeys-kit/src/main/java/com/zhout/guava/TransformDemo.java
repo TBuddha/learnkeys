@@ -13,7 +13,7 @@ import java.util.Set;
  * @author zhout
  * @date 2020/4/7 15:18
  */
-public class TransformDemo {
+class TransformDemo {
   public static void main(String[] args) {
     // transform(): 类型转换
     Set<Long> times = Sets.newHashSet();

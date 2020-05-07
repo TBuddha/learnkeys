@@ -15,8 +15,10 @@ class Demo {
     return ("(" + _officeAreaCode + ")" + _officeNumber);
   }
 
-  // 现在，我想把这个函数改名为getOfficeTelephoneNumber()。首先建立一个新函数 ，命名为getOfficeTelephoneNumber()， 并
-  // 将原函数getTelephoneNumber()的代码复制过来。然后，让旧函数直接调用新函数:
+  // 现在，我想把这个函数改名为getOfficeTelephoneNumber()。
+  // 首先建立一个新函数 ，命名为getOfficeTelephoneNumber()，
+  // 并将原函数getTelephoneNumber()的代码复制过来。
+  // 然后，让旧函数直接调用新函数:
   public String getOfficeTelephoneNumber() {
     return ("(" + _officeAreaCode + ")" + _officeNumber);
   }

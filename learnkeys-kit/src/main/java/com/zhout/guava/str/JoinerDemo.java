@@ -10,7 +10,7 @@ import java.util.Map;
  * @author zhout
  * @date 2020/4/7 14:39
  */
-public class JoinerDemo {
+class JoinerDemo {
 
   public static void main(String[] args) {
     /*

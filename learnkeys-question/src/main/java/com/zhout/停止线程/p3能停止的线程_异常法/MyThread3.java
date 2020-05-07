@@ -5,7 +5,7 @@ package com.zhout.停止线程.p3能停止的线程_异常法;
  * @date 2020/4/22 10:21
  * 如何解决语句继续运行的问题呢
  */
-public class MyThread3 extends Thread {
+class MyThread3 extends Thread {
   public void run() {
     super.run();
     try {

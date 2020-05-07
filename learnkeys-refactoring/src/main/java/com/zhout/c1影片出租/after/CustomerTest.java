@@ -6,7 +6,7 @@ import org.junit.Test;
  * @author zhout
  * @date 2020/3/26 16:20
  */
-public class CustomerTest {
+class CustomerTest {
   @Test
   public void statement() {
     Customer customer = new Customer("John");

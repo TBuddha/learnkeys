@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
  * @date 2020/4/7 15:19
  * @desc Guava Cache有两种创建方式： cacheLoader callable callback LoadingCache是附带CacheLoader构建而成的缓存实现
  */
-public class LoadingCacheDemo {
+class LoadingCacheDemo {
   public static void main(String[] args) {
     LoadingCache<String, String> cache =
         CacheBuilder.newBuilder()

@@ -10,7 +10,7 @@ import java.util.List;
  * @author zhout
  * @date 2020/4/7 15:14
  */
-public class IterablesDemo {
+class IterablesDemo {
   public static void main(String[] args) {
     // Iterables.find查找集合首个匹配的元素
     List<String> listStr = Lists.newArrayList("hello", "world", "hehe");

@@ -9,7 +9,7 @@ import lombok.Data;
  * @date 2020/4/22 10:58
  */
 @Data
-public class SynchronizedObject {
+class SynchronizedObject {
   private String name = "a";
   private String password = "aa";
 

@@ -4,7 +4,7 @@ package com.zhout.停止线程.p5暴力停止;
  * @author zhout
  * @date 2020/4/22 10:50
  */
-public class MyThread extends Thread {
+class MyThread extends Thread {
   private int i = 0;
 
   public void run() {

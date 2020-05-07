@@ -10,7 +10,7 @@ import java.util.List;
  * @author zhout
  * @date 2020/4/20 15:23
  */
-public class FooKit {
+class FooKit {
 
   @Test
   public void listClearNull() {

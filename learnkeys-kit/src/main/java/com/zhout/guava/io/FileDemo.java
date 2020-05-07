@@ -12,7 +12,7 @@ import java.util.List;
  * @author zhout
  * @date 2020/4/7 15:27
  */
-public class FileDemo {
+class FileDemo {
   public static void main(String[] args) {
     File file = new File(System.getProperty("user.dir"));
   }

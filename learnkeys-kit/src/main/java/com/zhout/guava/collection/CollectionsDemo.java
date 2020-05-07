@@ -8,7 +8,7 @@ import java.util.Set;
  * @author zhout
  * @date 2020/4/7 15:18
  */
-public class CollectionsDemo {
+class CollectionsDemo {
   public static void main(String[] args) {
     // 集合操作：交集、差集、并集
     Set<Integer> set1 = Sets.newHashSet(1, 2, 3, 4, 5);

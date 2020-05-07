@@ -5,7 +5,7 @@ package com.zhout.停止线程.p4在沉睡中停止;
  * @date 2020/4/22 10:40
  *     <p>如果线程在sleep()状态下停止线程，会是什么效果呢？
  */
-public class MyThread1 extends Thread {
+class MyThread1 extends Thread {
   public void run() {
     super.run();
     try {

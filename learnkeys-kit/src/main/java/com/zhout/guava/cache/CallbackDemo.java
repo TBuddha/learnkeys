@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
  * @author zhout
  * @date 2020/4/7 15:23
  */
-public class CallbackDemo {
+class CallbackDemo {
   public static void main(String[] args) {
     /*
        ->是lambda表达式,就是匿名函数

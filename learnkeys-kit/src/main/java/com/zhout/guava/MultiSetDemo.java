@@ -7,7 +7,7 @@ import com.google.common.collect.Multiset;
  * @author zhout
  * @date 2020/4/7 15:11
  */
-public class MultiSetDemo {
+class MultiSetDemo {
   public static void main(String[] args) {
     // Multiset可统计一个词在文档中出现了多少次
     Multiset<String> set = LinkedHashMultiset.create();

@@ -6,7 +6,7 @@ import com.google.common.base.Optional;
  * @author zhout
  * @date 2020/4/7 14:16
  */
-public class OptionalDemo {
+class OptionalDemo {
   // Optional
 
   private static Integer sum(Optional<Integer> a, Optional<Integer> b) {

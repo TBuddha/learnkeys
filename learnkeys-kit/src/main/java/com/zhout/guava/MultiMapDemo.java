@@ -10,7 +10,7 @@ import java.util.Map;
  * @author zhout
  * @date 2020/4/7 15:12
  */
-public class MultiMapDemo {
+class MultiMapDemo {
   public static void main(String[] args) {
     // Multimap可以很容易地把一个键映射到多个值。换句话说，Multimap是把键映射到任意多个值的一般方式。
     Multimap<String, Integer> map = HashMultimap.create(); // Multimap是把键映射到任意多个值的一般方式

@@ -4,7 +4,7 @@ package com.zhout.停止线程.p2判断线程是否停止状态;
  * @author zhout
  * @date 2020/4/22 09:49
  */
-public class MyThread extends Thread {
+class MyThread extends Thread {
   public void run() {
     super.run();
     for (int i = 0; i < 500000; i++) {

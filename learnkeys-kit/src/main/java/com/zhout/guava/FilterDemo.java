@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
  * @author zhout
  * @date 2020/4/7 15:15
  */
-public class FilterDemo {
+class FilterDemo {
   public static void main(String[] args) {
     // Collections2
     // filter(): 只保留集合中满足特定要求的元素

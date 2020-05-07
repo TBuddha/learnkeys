@@ -6,7 +6,7 @@ package com.zhout.停止线程.p6stop方法与ThreadDeath异常;
  * @author zhout
  * @date 2020/4/22 10:55
  */
-public class MyThread extends Thread {
+class MyThread extends Thread {
 
   public void run() {
     super.run();

@@ -7,7 +7,7 @@ import com.google.common.collect.ImmutableSet;
  * @author zhout
  * @date 2020/4/7 15:10
  */
-public class ImmutableDemo {
+class ImmutableDemo {
   public static void main(String[] args) {
     /*
     创建不可变集合方法：
