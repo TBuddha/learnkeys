@@ -4,7 +4,7 @@ package com.zhout.c8重新组织数据.p13以子类取代型别码;
  * @author zhout
  * @date 2020/4/24 17:22
  */
-public class Employee {
+class Employee {
 
   private int _type;
   static final int ENGINEER = 0;
