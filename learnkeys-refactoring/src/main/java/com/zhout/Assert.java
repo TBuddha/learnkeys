@@ -1,6 +1,8 @@
 package com.zhout;
 
 /**
+ * 本类在书中并未明确出现，以代码中出现Assert.isTrue、Assert.ON 推导而来
+ *
  * @author zhout
  * @date 2020/5/7 16:15
  */

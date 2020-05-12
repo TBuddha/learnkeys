@@ -10,7 +10,7 @@ import java.util.Vector;
  * @date 2020/3/26 11:23
  */
 class Customer {
-  @Getter private String _name; // 姓名
+  private String _name; // 姓名
   private Vector _rentals = new Vector(); // 租借记录
 
   public Customer(String name) {
@@ -23,7 +23,7 @@ class Customer {
 
   public String getName() {
     return _name;
-  };
+  }
 
   public String statement() {
     Enumeration rentals = _rentals.elements();
