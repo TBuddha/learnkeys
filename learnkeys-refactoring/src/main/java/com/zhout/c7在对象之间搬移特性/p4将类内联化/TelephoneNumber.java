@@ -1,4 +1,4 @@
-package com.zhout.c7在对象之间搬移特性.p4将类内联化.before;
+package com.zhout.c7在对象之间搬移特性.p4将类内联化;
 
 /**
  * @author zhout

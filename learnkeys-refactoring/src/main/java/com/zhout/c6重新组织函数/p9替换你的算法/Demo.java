@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * 把某个算法替换为另一个更清晰的算法。 将函数本体（method body）替换为另一个算法
+ *
  * @author zhout
  * @date 2020/4/14 16:39
  */
@@ -24,8 +26,6 @@ class Demo {
     return "";
   }
 
-  // 把某个算法替换为另一个更清晰的算法。
-  // 将函数本体（method body）替换为另一个算法
   String foundPerson1(String[] people) {
     List candidates = Arrays.asList(new String[] {"Don", "John", "Kent"});
     for (int i = 0; i < people.length; i++) if (candidates.contains(people[i])) return people[i];

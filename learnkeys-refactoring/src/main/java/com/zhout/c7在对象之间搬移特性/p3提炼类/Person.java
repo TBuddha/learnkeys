@@ -1,6 +1,9 @@
-package com.zhout.c7在对象之间搬移特性.p3提炼类.before;
+package com.zhout.c7在对象之间搬移特性.p3提炼类;
 
 /**
+ * 某个class做了应该由两个classes做的事。
+ * 建立一个新class，将相关的值域和函数从旧class搬移到新class。
+ *
  * @author zhout
  * @date 2020/4/15 14:02
  */

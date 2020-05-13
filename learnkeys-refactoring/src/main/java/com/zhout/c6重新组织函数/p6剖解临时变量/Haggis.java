@@ -17,9 +17,8 @@ class Haggis {
 
   private double _secondaryForce = 16.0; // 二次力
 
-  /**
-   * 下面范例中我要计算一个苏格兰布丁（haggis）运动的距离。在起点处，静止的苏格兰布丁会受到一个初始力的作用而开始运动。一段时间后，第二个力作用于布丁，让它再次加速。根据牛顿第二定律，我可以这样计算布丁运动的距离：
-   */
+  // 下面范例中我要计算一个苏格兰布丁（haggis）运动的距离。在起点处，静止的苏格兰布丁会受到一个初始力的作用而开始运动。
+  // 一段时间后，第二个力作用于布丁，让它再次加速。根据牛顿第二定律，我可以这样计算布丁运动的距离：
   double getDistanceTravelled(int time) {
     double result;
     double acc = _primaryForce / _mass; // 译注：第一次赋值处
@@ -36,10 +35,10 @@ class Haggis {
     return result;
   }
 
-  /**
-   * 首先，在函数开始处修改这个临时变量的名称，并将新的临时变量声明为final。 接下来我把第二次赋值之前对acc变量的所有引用点，全部改用新的临时变量。最后，我在第二次赋值处重新声明acc变量
-   */
-  double getDistanceTravelled2(int time) {
+  //首先，在函数开始处修改这个临时变量的名称，并将新的临时变量声明为final。
+  // 接下来我把第二次赋值之前对acc变量的所有引用点，全部改用新的临时变量。
+  // 最后，我在第二次赋值处重新声明acc变量
+  double getDistanceTravelled1(int time) {
     double result;
     final double primaryAcc = _primaryForce / _mass;
 
@@ -55,8 +54,9 @@ class Haggis {
     return result;
   }
 
-  /** 继续处理临时变量的第二次赋值。这次我把原先的临时变量完全删掉，代之以一个新的临时变量。新变量的名称指出，它只承担原先变量的第二个责任： */
-  double getDistanceTravelled3(int time) {
+  //继续处理临时变量的第二次赋值。这次我把原先的临时变量完全删掉，
+  // 代之以一个新的临时变量。新变量的名称指出，它只承担原先变量的第二个责任：
+  double getDistanceTravelled2(int time) {
     double result;
     final double primaryAcc = _primaryForce / _mass;
 

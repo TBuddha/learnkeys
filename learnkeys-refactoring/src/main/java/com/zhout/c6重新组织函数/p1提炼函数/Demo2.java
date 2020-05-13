@@ -32,7 +32,7 @@ class Demo2 {
   }
 
   // 范例（examples）：无局部变量（No Local Variables）
-  void printOwing2() {
+  void printOwing1() {
     Enumeration e = _orders.elements();
     double outstanding = 0.0;
     printBanner();
@@ -46,16 +46,9 @@ class Demo2 {
     System.out.println("amount" + outstanding);
   }
 
-  void printBanner() {
-    // print banner
-    System.out.println("**************************");
-    System.out.println("***** Customer Owes ******");
-    System.out.println("**************************");
-  }
-
   // 范例（Examples）：有局部变量（Using Local Variables）
   // 打印详细信息」这一部分提炼为「带一个参数的函数
-  void printOwing3() {
+  void printOwing2() {
     Enumeration e = _orders.elements();
     double outstanding = 0.0;
     printBanner();
@@ -67,20 +60,14 @@ class Demo2 {
     printDetails(outstanding);
   }
 
-  void printDetails(double outstanding) {
-    System.out.println("name:" + _name);
-    System.out.println("amount" + outstanding);
-  }
-
   // 范例（Examples）：对局部变量再赋值（Reassigning a Local Variable）
-  void printOwing4() {
+  void printOwing3() {
     printBanner();
     double outstanding = getOutstanding();
     printDetails(outstanding);
   }
 
   double getOutstanding() {
-    // 1
     //    Enumeration e = _orders.elements();
     //    double outstanding = 0.0;
     //    while (e.hasMoreElements()) {
@@ -89,7 +76,7 @@ class Demo2 {
     //    }
     //    return outstanding;
 
-    // 2 修改命名规则
+    // 修改变量命名
     Enumeration e = _orders.elements();
     double result = 0.0;
     while (e.hasMoreElements()) {
@@ -120,6 +107,25 @@ class Demo2 {
     printDetails(outstanding);
   }
 
+  // final
+  void printOwing_ext2(double previousAmount) {
+    printBanner();
+    double outstanding = getOutstanding(previousAmount * 1.2);
+    printDetails(outstanding);
+  }
+
+  void printBanner() {
+    // print banner
+    System.out.println("**************************");
+    System.out.println("***** Customer Owes ******");
+    System.out.println("**************************");
+  }
+
+  void printDetails(double outstanding) {
+    System.out.println("name:" + _name);
+    System.out.println("amount" + outstanding);
+  }
+
   double getOutstanding(double initialValue) {
     double result = initialValue;
     Enumeration e = _orders.elements();
@@ -128,21 +134,5 @@ class Demo2 {
       result += each.getAmount();
     }
     return result;
-  }
-
-  //final
-  void printOwing_ext2(double previousAmount) {
-    printBanner();
-    double outstanding = getOutstanding(previousAmount * 1.2);
-    printDetails(outstanding);
-  }
-
-  public static class Order {
-
-    @Getter double amount;
-
-    public Enumeration<String> elements() {
-      return null;
-    }
   }
 }

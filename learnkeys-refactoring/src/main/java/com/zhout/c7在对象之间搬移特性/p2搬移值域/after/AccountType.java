@@ -1,8 +1,8 @@
-package com.zhout.c7在对象之间搬移特性.p2搬移值域;
+package com.zhout.c7在对象之间搬移特性.p2搬移值域.after;
 
 /**
  * @author zhout
- * @date 2020/5/13 18:05
+ * @date 2020/4/15 09:49
  */
 class AccountType {
   private double _interestRate;

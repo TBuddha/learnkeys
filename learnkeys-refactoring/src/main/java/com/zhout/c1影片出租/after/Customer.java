@@ -1,7 +1,5 @@
 package com.zhout.c1影片出租.after;
 
-import lombok.Getter;
-
 import java.util.Enumeration;
 import java.util.Vector;
 
@@ -28,6 +26,7 @@ class Customer {
   public String statement() {
     Enumeration rentals = _rentals.elements();
     String result = "Rental Record for " + getName() + "\n";
+
     while (rentals.hasMoreElements()) {
       Rental each = (Rental) rentals.nextElement();
       // show figures for this rental

@@ -3,6 +3,7 @@ package com.zhout.c6重新组织函数.p7移除对参数的赋值动作;
 import java.util.Date;
 
 /**
+ * 如果参数中传递的是对象，就可能把人弄迷糊了。
  * @author zhout
  * @date 2020/4/14 15:12
  */

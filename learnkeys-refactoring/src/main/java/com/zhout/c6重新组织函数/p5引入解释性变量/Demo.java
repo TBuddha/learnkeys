@@ -1,6 +1,9 @@
 package com.zhout.c6重新组织函数.p5引入解释性变量;
 
 /**
+ * 你有一个复杂的表达式。
+ * 将该表达式（或其中一部分）的结果放进一个临时变量，以此变量名称来解释表达式用途。
+ *
  * @author zhout
  * @date 2020/4/13 16:25
  */
@@ -26,7 +29,7 @@ class Demo {
   }
 
   // 将该表达式（或其中一部分）的结果放进一个临时变量，以此变量名称来解释表达式用途
-  public void foo2() {
+  public void foo1() {
     final boolean isMacOs = platform.toUpperCase().indexOf("MAC") > -1;
     final boolean isIEBrowser = browser.toUpperCase().indexOf("IE") > -1;
     final boolean wasResized = resize > 0;
