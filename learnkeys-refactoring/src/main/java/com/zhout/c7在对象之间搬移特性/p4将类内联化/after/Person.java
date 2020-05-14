@@ -8,6 +8,7 @@ class Person {
 
   private TelephoneNumber _officeTelephone = new TelephoneNumber();
 
+  //首先我在Person中声明TelephoneNumber「的所有「可见」（public）函数：
   String getAreaCode() {
     return _officeTelephone.getAreaCode(); // 译注：请注意其变化
   }
