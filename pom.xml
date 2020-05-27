@@ -30,6 +30,7 @@
         <module>learnkeys-refactoring</module>
         <module>learnkeys-test</module>
         <module>learnkeys-question</module>
+        <module>learnkeys-algorithm</module>
     </modules>
 
     <dependencyManagement>
