@@ -1,4 +1,4 @@
-package com.zhout.停止线程.p1停止不了的线程;
+package 停止线程.p1停止不了的线程;
 
 /**
  * @author zhout

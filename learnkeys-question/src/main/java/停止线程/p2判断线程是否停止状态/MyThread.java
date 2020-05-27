@@ -1,4 +1,4 @@
-package com.zhout.停止线程.p2判断线程是否停止状态;
+package 停止线程.p2判断线程是否停止状态;
 
 /**
  * @author zhout

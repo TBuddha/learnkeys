@@ -1,4 +1,4 @@
-package com.zhout.SOLID.里氏替换原则;
+package SOLID.里氏替换原则;
 
 import java.time.Instant;
 

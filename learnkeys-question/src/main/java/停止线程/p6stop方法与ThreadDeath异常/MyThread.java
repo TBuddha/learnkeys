@@ -1,4 +1,4 @@
-package com.zhout.停止线程.p6stop方法与ThreadDeath异常;
+package 停止线程.p6stop方法与ThreadDeath异常;
 
 /**
  * stop()方法已作废，因为如果强制让线程停止有可能使一些清理性的工作得不到完成。

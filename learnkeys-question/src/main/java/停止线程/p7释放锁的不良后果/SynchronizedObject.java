@@ -1,4 +1,4 @@
-package com.zhout.停止线程.p7释放锁的不良后果;
+package 停止线程.p7释放锁的不良后果;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.zhout.停止线程.p4在沉睡中停止;
+package 停止线程.p4在沉睡中停止;
 
 /**
  * @author zhout

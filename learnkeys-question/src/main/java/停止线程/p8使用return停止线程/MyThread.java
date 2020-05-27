@@ -1,4 +1,4 @@
-package com.zhout.停止线程.p8使用return停止线程;
+package 停止线程.p8使用return停止线程;
 
 /**
  * 将方法interrupt()与return结合使用也能实现停止线程的效果

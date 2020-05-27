@@ -1,4 +1,4 @@
-package com.zhout.SOLID.依赖倒置原则;
+package SOLID.依赖倒置原则;
 
 /**
  * @author zhout

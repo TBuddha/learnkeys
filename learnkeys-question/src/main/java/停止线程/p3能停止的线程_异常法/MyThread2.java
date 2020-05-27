@@ -1,4 +1,4 @@
-package com.zhout.停止线程.p3能停止的线程_异常法;
+package 停止线程.p3能停止的线程_异常法;
 
 /**
  * @author zhout

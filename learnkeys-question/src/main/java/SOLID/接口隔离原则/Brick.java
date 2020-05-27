@@ -1,4 +1,4 @@
-package com.zhout.SOLID.接口隔离原则;
+package SOLID.接口隔离原则;
 
 /**
  * 什么是Role interface? 举个例子，砖头(Brick)可以被建筑工人用来盖房子，也可以被用来正当防卫：
