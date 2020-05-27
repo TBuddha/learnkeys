@@ -4,7 +4,7 @@ package thread.控制线程;
  * @author zhouT
  * @date 2019/构建器/9 11:28
  */
-public class YieldTest extends Thread {
+class YieldTest extends Thread {
   public YieldTest(String name) {
     super(name);
   }

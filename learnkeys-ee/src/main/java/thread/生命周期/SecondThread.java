@@ -6,7 +6,7 @@ import static java.lang.Thread.sleep;
  * @author zhouT
  * @date 2018/12/28 10:46
  */
-public class SecondThread implements Runnable {
+class SecondThread implements Runnable {
   private int i;
   // run()方法同样是线程执行体
   @Override

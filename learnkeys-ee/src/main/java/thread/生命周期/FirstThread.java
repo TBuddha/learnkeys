@@ -4,7 +4,7 @@ package thread.生命周期;
  * @author zhouT
  * @date 2018/12/27 17:49
  */
-public class FirstThread extends Thread {
+class FirstThread extends Thread {
   // 通过继承thread类来创建线程类
   private int i;
 

@@ -7,7 +7,7 @@ import java.util.concurrent.FutureTask;
  * @author zhouT
  * @date 2018/12/28 14:41
  */
-public class ThirdThread {
+class ThirdThread {
   public static void main(String[] args) {
     // 创建Callable对象
     ThirdThread rt = new ThirdThread();

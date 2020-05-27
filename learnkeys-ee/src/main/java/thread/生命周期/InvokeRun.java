@@ -4,7 +4,7 @@ package thread.生命周期;
  * @author zhouT
  * @date 2018/12/28 16:01
  */
-public class InvokeRun extends Thread {
+class InvokeRun extends Thread {
   private int i;
 
   // 重写run方法，run方法的方法体就是线程执行体

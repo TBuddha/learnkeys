@@ -11,7 +11,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @author zhouT
  * @date 2019/构建器/11 17:37
  */
-public class Account {
+class Account {
 
   // 显式定义lock对象
   private final Lock lock = new ReentrantLock();

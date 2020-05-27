@@ -7,7 +7,7 @@ import java.util.concurrent.Executors;
  * @author zhouT
  * @date 2019/构建器/14 19:22
  */
-public class ThreadPoolTest {
+class ThreadPoolTest {
   public static void main(String[] args) {
     // 创建一个具有固定线程数的(6)的线程池
     ExecutorService pool = Executors.newFixedThreadPool(6);

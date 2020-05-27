@@ -4,7 +4,7 @@ package thread.控制线程;
  * @author zhouT
  * @date 2019/构建器/4 17:55
  */
-public class JoinThread extends Thread {
+class JoinThread extends Thread {
 
   public JoinThread(String name) {
     // 用于设置该线程的名字

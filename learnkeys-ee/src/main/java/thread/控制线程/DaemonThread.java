@@ -4,7 +4,7 @@ package thread.控制线程;
  * @author zhouT
  * @date 2019/构建器/7 14:40
  */
-public class DaemonThread extends Thread {
+class DaemonThread extends Thread {
 
   @Override
   public void run() {

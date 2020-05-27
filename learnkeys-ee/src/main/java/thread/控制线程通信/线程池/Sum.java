@@ -9,6 +9,28 @@ import java.util.concurrent.RecursiveTask;
  * @author zhouT
  * @date 2019/构建器/14 20:18
  */
+public class Sum {
+  public static void main(String[] args) throws Exception {
+    int[] arr = new int[100];
+    Random rand = new Random();
+    int total = 0;
+    // 初始化100个数字元素
+    for (int i = 0, len = arr.length; i < len; i++) {
+      int tmp = rand.nextInt(20);
+      // 对数组元素赋值，并将数组元素的值添加到total总和中。
+      total += (arr[i] = tmp);
+    }
+    System.out.println(total);
+
+    ForkJoinPool pool = new ForkJoinPool();
+    // 提交可分解的CalTask任务
+    Future<Integer> future = pool.submit(new CalTask(arr, 0, arr.length));
+    System.out.println(future.get());
+    // 关闭线程池
+    pool.shutdown();
+  }
+}
+
 class CalTask extends RecursiveTask<Integer> {
   // 每个“小任务”只最多只累加20个数
   private static final int THRESHOLD = 20;
@@ -44,27 +66,5 @@ class CalTask extends RecursiveTask<Integer> {
       // 把两个“小任务”累加的结果合并起来
       return left.join() + right.join();
     }
-  }
-}
-
-public class Sum {
-  public static void main(String[] args) throws Exception {
-    int[] arr = new int[100];
-    Random rand = new Random();
-    int total = 0;
-    // 初始化100个数字元素
-    for (int i = 0, len = arr.length; i < len; i++) {
-      int tmp = rand.nextInt(20);
-      // 对数组元素赋值，并将数组元素的值添加到total总和中。
-      total += (arr[i] = tmp);
-    }
-    System.out.println(total);
-
-    ForkJoinPool pool = new ForkJoinPool();
-    // 提交可分解的CalTask任务
-    Future<Integer> future = pool.submit(new CalTask(arr, 0, arr.length));
-    System.out.println(future.get());
-    // 关闭线程池
-    pool.shutdown();
   }
 }

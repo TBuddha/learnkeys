@@ -13,7 +13,7 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 @NoArgsConstructor
 @AllArgsConstructor
-public class Account {
+class Account {
   // 定义锁对象
   private ReentrantLock lock = new ReentrantLock();
 

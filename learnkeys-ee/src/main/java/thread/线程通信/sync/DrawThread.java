@@ -4,7 +4,7 @@ package thread.线程通信.sync;
  * @author zhouT
  * @date 2019/构建器/11 15:00
  */
-public class DrawThread extends Thread {
+class DrawThread extends Thread {
 
   // 模拟账户
   private Account account;

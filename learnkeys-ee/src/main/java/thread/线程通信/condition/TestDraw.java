@@ -4,7 +4,7 @@ package thread.线程通信.condition;
  * @author zhouT
  * @date 2019/构建器/11 17:52
  */
-public class TestDraw {
+class TestDraw {
   public static void main(String[] args) {
     // 创建一个账户
     Account acct = new Account("1234567", 0);

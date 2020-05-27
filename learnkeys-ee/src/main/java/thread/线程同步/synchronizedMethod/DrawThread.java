@@ -4,7 +4,7 @@ package thread.线程同步.synchronizedMethod;
  * @author zhouT
  * @date 2019/构建器/9 15:23
  */
-public class DrawThread extends Thread {
+class DrawThread extends Thread {
   // 模拟账户
   private Account account;
   // 当前线程所希望取的钱

@@ -8,6 +8,18 @@ import java.util.concurrent.TimeUnit;
  * @author zhouT(.com)
  * @date 2019/4/14 19:42
  */
+class ForkJoinPoolTest {
+
+  public static void main(String[] args) {
+    ForkJoinPool pool = new ForkJoinPool();
+    // 提交可分解的PrintTask任务
+    pool.submit(new PrintTask(0, 300));
+    pool.awaitQuiescence(2, TimeUnit.SECONDS);
+    // 关闭线程池
+    pool.shutdown();
+  }
+}
+
 class PrintTask extends RecursiveAction {
   // 每个小任务最多只打印50个数
   private static final int THRESHOLD = 50;
@@ -36,17 +48,5 @@ class PrintTask extends RecursiveAction {
       left.fork();
       right.fork();
     }
-  }
-}
-
-public class ForkJoinPoolTest {
-
-  public static void main(String[] args) {
-    ForkJoinPool pool = new ForkJoinPool();
-    // 提交可分解的PrintTask任务
-    pool.submit(new PrintTask(0, 300));
-    pool.awaitQuiescence(2, TimeUnit.SECONDS);
-    // 关闭线程池
-    pool.shutdown();
   }
 }

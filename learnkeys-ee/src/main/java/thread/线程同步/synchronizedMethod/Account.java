@@ -11,7 +11,7 @@ import lombok.Setter;
  */
 @NoArgsConstructor
 @AllArgsConstructor
-public class Account {
+class Account {
   @Setter @Getter private String accountNo;
   // 由于余额不允许随意修改，所以只提供了getter方法
   @Getter private double balance;

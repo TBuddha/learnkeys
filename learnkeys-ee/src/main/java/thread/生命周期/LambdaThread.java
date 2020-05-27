@@ -4,7 +4,7 @@ package thread.生命周期;
  * @author zhouT
  * @date 2019/构建器/11 15:20
  */
-public class LambdaThread extends Thread {
+class LambdaThread extends Thread {
 
   public static void main(String[] args) {
     for (int i = 0; i < 10; i++) {

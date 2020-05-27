@@ -4,7 +4,7 @@ package thread.生命周期;
  * @author zhouT
  * @date 2018/12/28 20:03
  */
-public class StartDead extends Thread {
+class StartDead extends Thread {
   private int i;
 
   // 重写run方法，run方法的方法体就是线程执行体

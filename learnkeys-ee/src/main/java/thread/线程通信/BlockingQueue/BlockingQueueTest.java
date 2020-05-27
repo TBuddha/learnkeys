@@ -7,7 +7,7 @@ import java.util.concurrent.BlockingQueue;
  * @author zhouT
  * @date 2019/构建器/11 19:17
  */
-public class BlockingQueueTest {
+class BlockingQueueTest {
   public static void main(String[] args) throws InterruptedException {
     // 定义一个长度为2的阻塞队列
     BlockingQueue<String> bq = new ArrayBlockingQueue<>(2);
