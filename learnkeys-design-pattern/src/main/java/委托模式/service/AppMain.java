@@ -16,7 +16,7 @@ class AppMain {
     Client client = new Client(businessDelegate);
     client.doTask();
 
-    //        businessDelegate.setServerType(ServerType.ORDER);
-    //        client.doTask();
+    //    businessDelegate.setServerType(ServerType.ORDER);
+    //    client.doTask();
   }
 }

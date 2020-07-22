@@ -13,8 +13,7 @@ class BusinessLookup {
   /**
    * 查找对应的服务
    *
-   * @param serverType
-   * @return
+   * @param serverType 服务类型
    */
   public BusinessService getBusinessService(ServerType serverType) {
     if (serverType.equals(ServerType.LOGIN)) {
