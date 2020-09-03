@@ -6,7 +6,7 @@ import java.util.Random;
  * @author zhout
  * @date 2020/7/22 14:32
  */
-class StdRandom {
+public class StdRandom {
 
   private static Random random; // pseudo-random number generator
   private static long seed; // pseudo-random number generator seed

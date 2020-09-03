@@ -9,7 +9,7 @@ import java.util.Locale;
  * @author zhout
  * @date 2020/7/22 14:54
  */
-final class StdOut {
+public final class StdOut {
   // force Unicode UTF-8 encoding; otherwise it's system dependent
   private static final String CHARSET_NAME = "UTF-8";
 

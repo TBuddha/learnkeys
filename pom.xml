@@ -31,6 +31,7 @@
         <module>learnkeys-test</module>
         <module>learnkeys-question</module>
         <module>learnkeys-algorithm</module>
+        <module>learnkeys-graphql</module>
     </modules>
 
     <dependencyManagement>
