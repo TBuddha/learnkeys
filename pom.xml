@@ -32,6 +32,7 @@
         <module>learnkeys-question</module>
         <module>learnkeys-algorithm</module>
         <module>learnkeys-graphql</module>
+        <module>learnkeys-web</module>
     </modules>
 
     <dependencyManagement>

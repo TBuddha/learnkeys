@@ -1,0 +1,11 @@
+spring.application.name: learnkeys-web
+
+server:
+  port: 10001
+
+swagger:
+  version: 1.0
+  api-docs:
+    enable: ${swagger.enable:true}
+    title: api
+    description: api服务列表
