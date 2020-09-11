@@ -33,6 +33,7 @@
         <module>learnkeys-algorithm</module>
         <module>learnkeys-graphql</module>
         <module>learnkeys-web</module>
+        <module>learnkeys-netty</module>
     </modules>
 
     <dependencyManagement>
