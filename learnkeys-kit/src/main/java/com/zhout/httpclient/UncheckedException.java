@@ -1,4 +1,4 @@
-package com.zhout.exception;
+package com.zhout.httpclient;
 
 /**
  * 无需处理的异常

@@ -1,11 +1,12 @@
-package com.zhout.分布式唯一id;
+package com.zhout.Snowflake;
 
 /**
  * @author zhout
  * @date 2020/8/20 15:27 Twitter的SnowFlake算法,使用SnowFlake算法生成一个整数，然后转化为62进制变成一个短地址URL
  *     https://github.com/beyondfengyu/SnowFlake
  */
-public class SnowFlake {
+@Deprecated
+public class SnowFlakeDemo {
 
   /** 起始的时间戳 */
   private static final long START_TIMESTAMP = 1480166465631L;
@@ -39,7 +40,7 @@ public class SnowFlake {
    * @param dataCenterId 数据中心ID
    * @param machineId 机器标志ID
    */
-  public SnowFlake(long dataCenterId, long machineId) {
+  public SnowFlakeDemo(long dataCenterId, long machineId) {
     if (dataCenterId > MAX_DATA_CENTER_NUM || dataCenterId < 0) {
       throw new IllegalArgumentException(
           "DtaCenterId can't be greater than MAX_DATA_CENTER_NUM or less than 0！");
@@ -92,10 +93,10 @@ public class SnowFlake {
   }
 
   public static void main(String[] args) {
-    SnowFlake snowFlake = new SnowFlake(2, 3);
+    SnowFlakeDemo snowFlakeDemo = new SnowFlakeDemo(2, 3);
     for (int i = 0; i < (1 << 4); i++) {
       // 10进制
-      System.out.println(snowFlake.nextId());
+      System.out.println(snowFlakeDemo.nextId());
     }
   }
 }

@@ -2,6 +2,7 @@ package com.zhout;
 
 import com.google.common.base.Charsets;
 import com.google.common.collect.Maps;
+import com.zhout.httpclient.HttpKit;
 import org.apache.http.HttpEntity;
 import org.apache.http.util.EntityUtils;
 import org.junit.Test;
