@@ -1,8 +1,9 @@
-package p4递归.二分查找方式;
+package p4递归;
 
 /**
  * @author zhout
  * @date 2020/7/22 10:47
+ * 二分查找的方式
  */
 class BinarySearch {
 
@@ -17,7 +18,7 @@ class BinarySearch {
    * @param key 查找元素
    * @param lo 数组低地址下标
    * @param hi 数组高地址下标
-   * @return 查找元素不存在返回-1
+   * @return 查找元素索引，不存在返回-1
    */
   private static int rank(int key, int[] srcArray, int lo, int hi) {
     if (lo > hi) return -1; // 如果key存在于a[]中，它的索引不会小于lo且不会大于hi
