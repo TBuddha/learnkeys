@@ -9,3 +9,10 @@ swagger:
     enable: ${swagger.enable:true}
     title: api
     description: api服务列表
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 日志配置 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    root: info
+    org.example: debug
