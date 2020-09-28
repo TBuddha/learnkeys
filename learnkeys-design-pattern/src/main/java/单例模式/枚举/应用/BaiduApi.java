@@ -1,4 +1,4 @@
-package 单例模式枚举;
+package 单例模式.枚举.应用;
 
 /**
  * @author zhoutao@yunjiacloud.com

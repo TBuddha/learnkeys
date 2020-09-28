@@ -28,48 +28,69 @@ public class Ex27 {
   }
 
   @Test
-  public void test() {
-    int n = 10, k = 5;double p = 0.25;
+  public void test1() {
+    int n = 10000, k = 50;
+    double p = 0.25;
 
-    double b = binomial(n, k, p);
-    System.out.println(b);
-    System.out.println(count);
+    //    double b = binomial(n, k, p);
+    //    System.out.println(b);
+    //    System.out.println(count);
 
-    //---------------------------------------//
-
-    double better = betterBinomial(n, k, p);
+    // ---------------------------------------//
+    double better = binomial2(n, k, p);
     System.out.println(better);
-    System.out.println(COUNT2);
+    // ---------------------------------------//
   }
 
-  // 将已经计算过的值保存在数组中并给出一个更好的实现：
-  private static long COUNT2 = 0;
+  // 将已经计算过的值保存在数组中并给出一个更好的实现：官网实现
+  // memoization
+  public static double binomial2(int N, int k, double p) {
+    double[][] b = new double[N + 1][k + 1];
+
+    // base cases
+    for (int i = 0; i <= N; i++) b[i][0] = Math.pow(1.0 - p, i);
+    b[0][0] = 1.0;
+
+    // recursive formula
+    for (int i = 1; i <= N; i++) {
+      for (int j = 1; j <= k; j++) {
+        b[i][j] = p * b[i - 1][j - 1] + (1.0 - p) * b[i - 1][j];
+      }
+    }
+    return b[N][k];
+  }
+
   private static double[][] MATRIX;
 
-  public static double betterBinomial(int N, int k, double p) {
+  public static double binomial3(int N, int k, double p) {
     MATRIX = new double[N + 1][k + 1];
     for (int i = 0; i <= N; i++) {
       for (int j = 0; j <= k; j++) {
-        // 设数组初始值为-1，只保存没有计算过的
         MATRIX[i][j] = -1;
       }
     }
-    // 调用数组实现的方法
     return bin(N, k, p);
   }
 
   private static double bin(int N, int k, double p) {
-    COUNT2++;
     if (N == 0 && k == 0) {
       return 1.0;
     }
     if (N < 0 || k < 0) {
       return 0.0;
     }
-    // 将结果用数组存放，只保存没有计算过的
     if (MATRIX[N][k] == -1) {
       MATRIX[N][k] = (1.0 - p) * bin(N - 1, k, p) + p * bin(N - 1, k - 1, p);
     }
     return MATRIX[N][k];
   }
+
+  @Test
+  public void test2() {
+    int n = 10000, k = 50;
+    double p = 0.25;
+    System.out.println(binomial3(n, k, p));
+  }
+  // 总结
+  // binomial2()为最佳实现，binomial3(3)大数据会崩
 }
