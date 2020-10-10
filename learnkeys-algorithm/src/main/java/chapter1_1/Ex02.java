@@ -16,10 +16,12 @@ public class Ex02 {
     // 另：如果要精确的小数计算的话，建议使用BigDecimal
     Assert.assertEquals((1 + 2.236) / 2, 1.618, 0.000);
 
+    //1，2，3会转换为浮点型
     Assert.assertEquals(1 + 2 + 3 + 4.0, 10.0, 0);
 
     Assert.assertTrue(4.1 >= 4);
-    // !!!
+
+    // !!!//数字转化为字符串
     Assert.assertEquals(1 + 2 + "3", "33");
   }
 }

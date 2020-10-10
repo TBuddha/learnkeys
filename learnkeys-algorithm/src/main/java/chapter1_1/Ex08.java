@@ -10,6 +10,7 @@ import org.junit.Test;
 public class Ex08 {
   @Test
   public void test() {
+    // 要点：b的ASCII码为98，c的为99
     Assert.assertEquals('b', 'b'); // 直接打印char字符
     Assert.assertEquals('b' + 'c', 197); // 98 + 99 = 197
     Assert.assertEquals((char) ('a' + 4), 101); // 97 + 4 = 101，e的ASCII码是101

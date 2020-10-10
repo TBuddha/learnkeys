@@ -17,7 +17,7 @@ public class Ex09 {
     Assert.assertEquals(toBinaryStr(N), Integer.toBinaryString(N));
 
     int value = -1024;
-    Assert.assertEquals(toBinaryString(value), Integer.toBinaryString(value));
+    Assert.assertEquals(decimalToBinary(value), Integer.toBinaryString(value));
   }
 
   private String toBinaryStr(int N) {
@@ -25,20 +25,12 @@ public class Ex09 {
     for (int n = N; n > 0; n /= 2) s = (n % 2) + s;
     return s;
   }
-
+  // 分析：虽然够简洁，但效率不怎么样，Java源码的的实现效率可以，Java Integer
+  // 源码：http://grepcode.com/file_/repository.grepcode.com/java/root/jdk/openjdk/6-b14/java/lang/Integer.java/?v=source
   /** 此方法支持正负整数 */
-  private static String toBinaryString(int value) {
-    if (value == 0) {
-      return "0";
-    }
-    int bufLen = 32;
-    int index = bufLen;
-    char[] result = new char[bufLen];
-    do {
-      // 使用 & 符合相对除 2 提升一定性能
-      result[--index] = (char) ('0' + (value & 1));
-      value = value >>> 1;
-    } while (value != 0);
-    return new String(result, index, bufLen - index);
+  public static String decimalToBinary(int n) {
+    String resultString = "";
+    for (int i = 31; i >= 0; i--) resultString = resultString + (n >>> i & 1);
+    return resultString;
   }
 }

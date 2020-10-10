@@ -1,6 +1,7 @@
 package chapter1_1;
 
 import repo.StdIn;
+import repo.StdOut;
 
 import java.util.Scanner;
 

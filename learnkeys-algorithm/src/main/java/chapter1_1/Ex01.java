@@ -10,8 +10,8 @@ import org.junit.Test;
 public class Ex01 {
   @Test
   public void test() {
-    Assert.assertEquals((0 + 15) / 2, 7);
-    Assert.assertEquals(2.0e-6 * 100000000.1, 200.0000002, 0);
-    Assert.assertTrue(true && false || true && true);
+    Assert.assertEquals((0 + 15) / 2, 7); // 类型是整形，所以输出7
+    Assert.assertEquals(2.0e-6 * 100000000.1, 200.0000002, 0); // 浮点型
+    Assert.assertTrue(true && false || true && true); // false||true，输出
   }
 }

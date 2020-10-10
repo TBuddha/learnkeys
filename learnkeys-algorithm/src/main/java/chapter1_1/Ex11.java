@@ -2,6 +2,8 @@ package chapter1_1;
 
 import org.junit.Test;
 
+import java.util.Locale;
+
 /**
  * @author zhout
  * @date 2020/9/16 16:53
@@ -13,6 +15,7 @@ public class Ex11 {
     boolean[][] boo =
         new boolean[][] {{true, false, false}, {true, true, true}, {true, true, false}};
     printBooleanMatrix(boo);
+    printout(boo);
   }
 
   private static void printBooleanMatrix(boolean[][] matrix) {
@@ -27,6 +30,18 @@ public class Ex11 {
         System.out.print(matrix[i][j] ? '*' : ' ');
       }
       System.out.println();
+    }
+  }
+
+  private static void printout(boolean[][] a1){
+    for (int i = 0; i < a1.length; i++) {
+      for (int j = 0; j < a1[i].length; j++) {
+        if (a1[i][j]){
+          System.out.println(String.format(Locale.CHINA,"%d  %d *",i+1,j+1));
+        } else {
+          System.out.println(String.format(Locale.CHINA,"%d  %d /",i+1,j+1));
+        }
+      }
     }
   }
 }

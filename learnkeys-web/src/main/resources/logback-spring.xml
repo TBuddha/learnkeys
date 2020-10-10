@@ -21,7 +21,7 @@
             <maxHistory>1</maxHistory>
             <maxFileSize>200MB</maxFileSize>
         </rollingPolicy>
-        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+        <filter class="ch.qos.logback.algs4.filter.ThresholdFilter">
             <level>DEBUG</level>
         </filter>
     </appender>
@@ -36,7 +36,7 @@
             <maxHistory>1</maxHistory>
             <maxFileSize>200MB</maxFileSize>
         </rollingPolicy>
-        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+        <filter class="ch.qos.logback.algs4.filter.ThresholdFilter">
             <level>INFO</level>
         </filter>
     </appender>
@@ -51,7 +51,7 @@
             <maxHistory>1</maxHistory>
             <maxFileSize>200MB</maxFileSize>
         </rollingPolicy>
-        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+        <filter class="ch.qos.logback.algs4.filter.ThresholdFilter">
             <level>ERROR</level>
         </filter>
     </appender>

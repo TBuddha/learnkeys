@@ -9,7 +9,7 @@ import java.util.Arrays;
  * @date 2020/9/16 16:54
  */
 public class Ex13 {
-  // “编写一段代码，打印出一个  行  列的二维数组的转置 （交换行和列）”
+  // “编写一段代码，打印出一个 M 行 N 列的二维数组的转置 （交换行和列）”
   @Test
   public void test() {
     int[][] a = {{1, 2, 3}, {4, 5, 6}};

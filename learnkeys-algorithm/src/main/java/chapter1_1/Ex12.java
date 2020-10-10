@@ -20,6 +20,9 @@ public class Ex12 {
       System.out.println(a[i]);
     }
     System.out.println("======");
-    for (int i = 0; i < 10; i++) System.out.println(i);
+    for (int i = 0; i < 10; i++) System.out.println(a[i]);
+    /*网上看到的电子书的最后一句都有误，是
+    System.out.println(i);
+    应该是System.out.println(a[i]);所以这里改掉了*/
   }
 }
