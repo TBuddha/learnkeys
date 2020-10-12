@@ -43,6 +43,7 @@ public class Ex22 {
     int[] a = {1, 2, 3, 4, 6, 7, 8, 9, 12};
     int key = 5;
     int pos = rank(key, a);
+
     if (pos == -1) {
       System.out.println("not found!");
     } else {

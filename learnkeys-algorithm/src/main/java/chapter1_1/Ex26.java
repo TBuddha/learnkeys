@@ -12,11 +12,14 @@ public class Ex26 {
   // if (a > c) { t = a; a = c; c = t; }
   // if (b > c) { t = b; b = c; c = t; }
   // ------------------------------------ //
+  // 解析：这是冒泡排序的一种思路：通过不停交换数字，将小的数冒泡到最上面。
+
   public static void main(String[] args) {
     inAnAscendingOrder(15, 13, 10);
   }
 
-  /** 1、a>b，那么ab交换位置。
+  /**
+   * 1、a>b，那么ab交换位置。
    * 2、a>c,那么ac交换位置，那么此时c已经到第一位，最小。
    * 3、b>c,那么bc交换位置，大的放在最后。
    * 此时 a<b<c

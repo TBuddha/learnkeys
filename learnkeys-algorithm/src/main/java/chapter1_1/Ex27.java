@@ -91,6 +91,6 @@ public class Ex27 {
     double p = 0.25;
     System.out.println(binomial3(n, k, p));
   }
-  // 总结
+  // 总结 详细看MD
   // binomial2()为最佳实现，binomial3(3)大数据会崩
 }

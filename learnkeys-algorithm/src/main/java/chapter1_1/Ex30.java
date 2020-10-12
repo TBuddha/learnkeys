@@ -40,17 +40,4 @@ public class Ex30 {
     }
     return true;
   }
-
-  public static int euclid(int p, int q) {
-    if (p < q) {
-      int t = p;
-      p = q;
-      q = t;
-    }
-    if (q == 0) {
-      return p;
-    } else {
-      return euclid(q, p % q);
-    }
-  }
 }

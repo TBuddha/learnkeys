@@ -24,6 +24,7 @@ public class Ex28 {
 
   private static void a1(int[] whiteArray, int key) {
     Arrays.sort(whiteArray);
+
     ArrayList<Integer> list = new ArrayList<>();
     for (int i = 0; i < whiteArray.length - 1; i++) {
       if (whiteArray[i] != whiteArray[i + 1]) {
