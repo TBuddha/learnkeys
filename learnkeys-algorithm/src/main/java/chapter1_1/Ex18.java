@@ -1,6 +1,6 @@
 package chapter1_1;
 
-import com.zhout.guava.math.Maths;
+import org.example.guava.math.Maths;
 import org.junit.Assert;
 import org.junit.Test;
 
