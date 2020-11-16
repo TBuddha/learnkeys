@@ -27,6 +27,11 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>
+
         <!--httpclient-->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
