@@ -17,13 +17,12 @@ import java.util.concurrent.TimeUnit;
  * @author zhout
  * @date 2020/4/8 15:21
  */
-public class HttpKitTest {
+public class HttpTest {
   @Test
   public void test() throws Exception {
     HttpKit.HttpConnectionManager.setMaxTotal(100);
     HttpKit.HttpConnectionManager.setDefaultMaxPerRoute(1);
-    HttpKit.get("https://easy-mock.com/mock/5ab6845e64bf8d1e392c169f/example/query?k=v")
-        .param("key1", "value1")
+    HttpKit.get("https://easy-mock.com/mock/5ab6845e64bf8d1e392c169f/example/query?k=v").param("key1", "value1")
         .param("key2", "value2")
         .header("hkey1", "hvalue1")
         .body();

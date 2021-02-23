@@ -1,7 +1,10 @@
 package org.example.guava.collection;
 
+import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -21,5 +24,8 @@ class CollectionsDemo {
 
     Sets.SetView<Integer> union = Sets.union(set1, set2); // 并集
     System.out.println(union);
+
+    List<String> list = Lists.newArrayList("1","a");
+    System.out.println(Arrays.toString(list.toArray(new String[0])));
   }
 }

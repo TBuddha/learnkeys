@@ -4,6 +4,8 @@ import com.google.common.base.Charsets;
 import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.http.*;
 import org.apache.http.auth.AuthScope;
 import org.apache.http.auth.UsernamePasswordCredentials;
@@ -47,6 +49,7 @@ import static org.apache.http.entity.ContentType.APPLICATION_JSON;
  * @author zhout
  * @date 2020/4/8 15:09
  */
+@Slf4j
 public class HttpKit {
   /**
    * GET 请求, 兼容 HTTP 和 HTTPS 请求
@@ -105,7 +108,7 @@ public class HttpKit {
    *
    * @author fanlychie
    */
-  public static final class HttpRequest {
+  public static class HttpRequest {
 
     // 请求的地址
     private String url;
@@ -375,8 +378,8 @@ public class HttpKit {
           entity.writeTo(outputStream);
           EntityUtils.consume(entity);
         } else {
-          throw new HttpResponseException(
-              response.getStatusLine().getStatusCode(), response.getStatusLine().getReasonPhrase());
+          System.out.println("responseCode:" + response.getStatusLine().getStatusCode() + "  reason:" + response.getStatusLine().getReasonPhrase());
+          throw new HttpResponseException(response.getStatusLine().getStatusCode(), response.getStatusLine().getReasonPhrase());
         }
 
       } finally {
