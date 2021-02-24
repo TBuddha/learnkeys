@@ -1,4 +1,4 @@
-package org.example.guava;
+package org.example.set;
 
 import com.google.common.collect.LinkedHashMultiset;
 import com.google.common.collect.Multiset;

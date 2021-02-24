@@ -1,18 +1,21 @@
-package org.example.guava.collection;
+package org.example.list;
 
 import com.google.common.base.Function;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 import com.sun.istack.internal.Nullable;
-
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * @author zhout
- * @date 2020/4/7 15:12
+ * @date 2021/2/24 17:15
  */
-class ListDemo {
+public class List3 {
+
   public static void main(String[] args) {
     List<String> list = Lists.newArrayList();
     List<String> list2 = Lists.newArrayList("a", "b", "c");

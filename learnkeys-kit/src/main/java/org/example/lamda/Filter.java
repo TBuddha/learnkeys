@@ -1,17 +1,17 @@
-package org.example.guava;
+package org.example.lamda;
 
 import com.google.common.collect.Collections2;
 import com.google.common.collect.Lists;
-
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
 /**
  * @author zhout
- * @date 2020/4/7 15:15
+ * @date 2021/2/24 09:29
  */
-class FilterDemo {
+public class Filter {
+
   public static void main(String[] args) {
     // Collections2
     // filter(): 只保留集合中满足特定要求的元素

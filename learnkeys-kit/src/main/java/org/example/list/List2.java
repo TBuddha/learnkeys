@@ -1,16 +1,16 @@
-package org.example.guava.collection;
+package org.example.list;
 
 import com.google.common.base.Predicate;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
-
 import java.util.List;
 
 /**
  * @author zhout
- * @date 2020/4/7 15:14
+ * @date 2021/2/24 17:14
  */
-class IterablesDemo {
+public class List2 {
+
   public static void main(String[] args) {
     // Iterables.find查找集合首个匹配的元素
     List<String> listStr = Lists.newArrayList("hello", "world", "hehe");

@@ -47,12 +47,11 @@ public class User {
   public static void main(String[] args) {
     User user1 = new User("a", 18, 1);
     User user2 = new User("a", 18, 1);
-    User user3 = new User("a", 19, 1);
 
     Set<User> set = Sets.newHashSet();
-    set.add(user1);
-    set.add(user2);
-    System.out.println(set.add(user3));
+    System.out.println(set.add(user1));
+    System.out.println(set.add(user2));
+
     System.out.println(set);
   }
 }

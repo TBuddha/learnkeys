@@ -1,4 +1,4 @@
-package org.example.guava.collection;
+package org.example.set;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
@@ -7,7 +7,7 @@ import com.google.common.collect.ImmutableSet;
  * @author zhout
  * @date 2020/4/7 15:10
  */
-class ImmutableDemo {
+class ImmutableSetDemo {
   public static void main(String[] args) {
     /*
     创建不可变集合方法：

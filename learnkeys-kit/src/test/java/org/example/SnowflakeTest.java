@@ -5,7 +5,7 @@ package org.example;
  * @date 2020/9/14 17:20
  */
 
-import org.example.Snowflake.Snowflake;
+import org.example.snowflake.Snowflake;
 import org.junit.Assert;
 import org.junit.Test;
 

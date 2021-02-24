@@ -1,4 +1,4 @@
-package org.example.guava;
+package org.example.guava.other;
 
 import com.google.common.base.Function;
 import com.google.common.collect.Collections2;
@@ -13,7 +13,7 @@ import java.util.Set;
  * @author zhout
  * @date 2020/4/7 15:18
  */
-class TransformDemo {
+class Transform {
   public static void main(String[] args) {
     // transform(): 类型转换
     Set<Long> times = Sets.newHashSet();

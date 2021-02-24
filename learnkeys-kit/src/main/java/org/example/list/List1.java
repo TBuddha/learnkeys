@@ -1,19 +1,24 @@
-package org.example.guava.collection;
+package org.example.list;
 
+import com.google.common.base.Function;
 import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
+import com.sun.istack.internal.Nullable;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+import org.junit.Test;
 
 /**
  * @author zhout
- * @date 2020/4/7 15:18
+ * @date 2020/4/7 15:12
  */
-class CollectionsDemo {
+class List1 {
+
+  /**
+   * 集合操作：交集、差集、并集
+   */
   public static void main(String[] args) {
-    // 集合操作：交集、差集、并集
     Set<Integer> set1 = Sets.newHashSet(1, 2, 3, 4, 5);
     Set<Integer> set2 = Sets.newHashSet(3, 4, 5, 6);
     Sets.SetView<Integer> inter = Sets.intersection(set1, set2); // 交集

@@ -1,4 +1,4 @@
-package org.example.guava;
+package org.example.map;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;

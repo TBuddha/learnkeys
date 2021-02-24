@@ -1,4 +1,4 @@
-package org.example.guava.str;
+package org.example.str;
 
 import com.google.common.base.Joiner;
 

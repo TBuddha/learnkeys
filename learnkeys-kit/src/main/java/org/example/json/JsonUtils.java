@@ -1,4 +1,4 @@
-package org.example.common;
+package org.example.json;
 
 import com.alibaba.fastjson.JSONObject;
 

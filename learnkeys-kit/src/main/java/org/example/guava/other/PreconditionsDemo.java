@@ -1,4 +1,4 @@
-package org.example.guava;
+package org.example.guava.other;
 
 import com.google.common.base.Preconditions;
 import org.junit.Test;
@@ -10,7 +10,7 @@ import java.util.List;
  * @author zhout
  * @date 2020/9/16 10:38
  */
-public class PreconditionsTest {
+public class PreconditionsDemo {
 
   @Test
   public void Preconditions() throws Exception {
@@ -89,29 +89,29 @@ public class PreconditionsTest {
   }
 
   public static void getPersonByPrecondition(int age, String name) throws Exception {
-    Preconditions.checkNotNull(name, "name为null");
-    Preconditions.checkArgument(name.length() > 0, "name为\'\'");
-    Preconditions.checkArgument(age > 0, "age 必须大于0");
+    com.google.common.base.Preconditions.checkNotNull(name, "name为null");
+    com.google.common.base.Preconditions.checkArgument(name.length() > 0, "name为\'\'");
+    com.google.common.base.Preconditions.checkArgument(age > 0, "age 必须大于0");
     System.out.println("it's ok, a person age:" + age + ",name:" + name);
   }
 
   public static void checkState(List<Integer> intList, int index) throws Exception {
     // 表达式为true不抛异常
-    Preconditions.checkState(intList.size() < index, " intList size 不能大于" + index);
+    com.google.common.base.Preconditions.checkState(intList.size() < index, " intList size 不能大于" + index);
   }
 
   public static void checkPositionIndex(List<Integer> intList, int index) throws Exception {
-    Preconditions.checkPositionIndex(
+    com.google.common.base.Preconditions.checkPositionIndex(
         index, intList.size(), "index " + index + " 不在 list中， List size为：" + intList.size());
   }
 
   public static void checkPositionIndexes(List<Integer> intList, int start, int end)
       throws Exception {
-    Preconditions.checkPositionIndexes(start, end, intList.size());
+    com.google.common.base.Preconditions.checkPositionIndexes(start, end, intList.size());
   }
 
   public static void checkElementIndex(List<Integer> intList, int index) throws Exception {
-    Preconditions.checkElementIndex(
+    com.google.common.base.Preconditions.checkElementIndex(
         index, intList.size(), "index 为 " + index + " 不在 list中， List size为： " + intList.size());
   }
 }

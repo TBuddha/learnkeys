@@ -1,4 +1,4 @@
-package org.example.Snowflake;
+package org.example.snowflake;
 
 import java.util.Date;
 

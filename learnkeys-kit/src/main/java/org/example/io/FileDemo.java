@@ -1,4 +1,4 @@
-package org.example.guava.io;
+package org.example.io;
 
 import com.google.common.base.Charsets;
 import com.google.common.collect.ImmutableList;
